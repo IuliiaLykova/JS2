@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-2 Lesson 2 - eShop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="eshop_tmb.jpg" type="image/png">
+    <link rel="stylesheet" href="chatbox.css">
+    
+    <script defer src="chatbox.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        bode {
+            //position: relative;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #eee;
+        }
+        .cart-button {
+            background: #44b96e;
+            color: #fff;
+            display: block;
+            width: 180px;
+            border-radius: 6px;
+        }
+
+        .cart-items-counter {}
+        .cart-container {
+            margin: 20px 0;
+            padding: 40px;
+            background: #eee;
+        }
+        .cart-inside {
+            margin: 20px 0;
+        }
+
+        .sum-goods {
+            margin: 20px;
+        }
+
+        main {
+            width: 100%;
+            min-height: 80vh;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .goods-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
+        .goods-item {
+            min-width: 200px;
+            height: 220px;
+            background: #fbfbfb;
+            box-shadow: 0px 2px 10px #b7b7b7;
+            margin: 5px;
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .item-title {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        .item-price {
+            margin: 14px 0;
+            font-size: 14px;
+        }
+        .add2cart {
+            padding: 4px 16px;
+            color: #fff;
+            background: #333;
+            border-radius: 6px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .add2cart:hover {
+            padding: 4px 16px;
+            color: #333;
+            background: #fff;
+            border: 1px solid #777;
+            cursor: pointer;
+        }
+
+        .item-image {
+            background-image:url(eshop_tmb.jpg);
+            height: 90px;
+            width: 90%;
+            margin: auto;
+        }
+        footer {
+            display: flex;
+            height: 120px;
+            background: #333;
+        }
+
+        .footer-title {
+            margin: auto;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">Home</a></div>
+        <div class="cart">
+            <button class="cart-button">Корзина: <span class="cart-items-counter">0 items</span></button>
+        </div>
+
+    </header>
+    <div class="sum-goods"></div>
+    <main>
+        <div class="goods-list"></div>
+        <div class="cart-container">
+           <h4>Cart:</h4>
+            <div class="cart-inside"></div>
+        </div>
+        
+    </main>
+    
+
+    <div class="chat-box"></div>
+    <footer>
+        <div class="footer-title">Just another Footer</div>
+    </footer>
+
+    <script src="index.js"></script>
+</body></html>
