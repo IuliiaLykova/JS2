@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+  </head>
+  <body>
+    <h1>
+      JS2, HW4 - 1
+    </h1>
+    <p>
+      <i
+        >"... Придумать ' шаблон, который заменяет одинарные кавычки на
+        двойные"</i
+      >
+    </p>
+    <h5>Решение</h5>
+    <p>
+      - <b>'Lorem'</b>, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+      voluptatibus temporibus aspernatur ab sapiente tempore optio. - Corrupti,
+      rerum dolore.
+    </p>
+
+    <h1>JS2, HW4 - 2</h1>
+    <p>
+      <i
+        >"Улучшить шаблон так, чтобы в конструкциях типа aren't одинарная
+        кавычка не заменялась на двойную."</i
+      >
+    </p>
+    <h5>Решение</h5>
+    <p>
+      - 'Aspernatur' <span class="str-bold">aren't</span> obcaecati fugit
+      maiores impedit earum ipsa in quam deserunt,
+      <strong>don't</strong> tempore nesciunt a itaque pariatur mollitia ducimus
+      eum quo!
+    </p>
+
+    <h1>JS2, HW4 - 3</h1>
+    <!-- Имя, Телефон, E-mail, текст, кнопка Отправить -->
+    <p>
+      <i
+        >*Создать форму обратной связи с полями: Имя, Телефон, E-mail, текст,
+        кнопка Отправить. При нажатии на кнопку Отправить произвести валидацию
+        полей следующим образом:</i
+      >
+    </p>
+    <h5>Решение</h5>
+    <div class="container">
+      <br />
+      <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+          <h4 class="card-title mt-3 text-center">Create Account</h4>
+          <p class="text-center">Get started with your free account</p>
+          <form>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Full name"
+                type="text"
+                id="fullName"
+                value=""
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Email address"
+                type="email"
+                value=""
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+              <select class="custom-select" style="max-width: 120px;">
+                <option selected="">+971</option>
+                <option value="1">+972</option>
+                <option value="2">+198</option>
+                <option value="3">+701</option>
+              </select>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Phone number"
+                type="text"
+                value=""
+              />
+            </div>
+
+            <!-- form-group end.// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <textarea
+                class="form-control"
+                placeholder="enter text here"
+              ></textarea>
+            </div>
+            <!-- form-group// -->
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" id="form-submit">
+                Create Account
+              </button>
+            </div>
+            <!-- form-group// -->
+            <p class="text-center">Have an account? <a href="#">Log In</a></p>
+          </form>
+        </article>
+      </div>
+    </div>
+    <h5 id="consoleLog">0123</h5>
+  </body>
+</html>
