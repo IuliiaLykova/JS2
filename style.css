@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+h1 {
+  font-size: 2rem;
+}
+.fa {
+    color: #fff;
+}
+.str-bold {
+  font-size: 30px;
+}
+#consoleLog {
+  margin: 20px;
+}
+
+.form-container {
+    display: flex;
+    padding: 20px;
+    background: #99999920;
+    border-radius: 20px;
+}
+.card {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.form-group {
+    text-align: left;
+    display: flex;
+    margin: 14px 0;
+    border-radius: 0 !important;
+} 
+.input-group-prepend {
+    background: #17406B;
+    padding:  0 12px;
+    border-radius: 6px 0 0 6px;
+    border: 5px solid #17406B;
+    //text-align: left !important;
+}
+.form-control {
+    width: 100%;
+    color: #17406B;
+    font-size: 16px;
+    padding-left: 14px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid #17406B;
+    
+}
+
+.custom-select {
+    font-size: 16px;
+    border-radius: 0 !important;
+    outline: #17406B solid thick;
+    outline-offset: -5px;
+}
+select {
+    color: #fff;
+    background: #17406B;
+    border: solid 6px #fff;
+    outline: #fff solid thick;
+    outline-offset: -5px;animation: 
+}
+textarea {
+    padding:50px auto;
+}
+.create-account-btn {
+    margin: 0 auto;
+    padding: 10px 84px;
+    border-radius: 20px;
+    color: #fff;
+    background: #17406B;
+    cursor: pointer;
+}  
+
+.create-account-btn:hover {
+    color: #17406B;
+    background: #fff;
+} 
+.warning-redBorders {
+    border: 1px solid #f00;
+}
